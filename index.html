@@ -1,0 +1,493 @@
+## Estrutura
+
+```txt
+educalize/
+│
+├── index.html
+├── README.md
+└── .replit
+```
+
+---
+
+# 1. index.html
+
+Crie um arquivo chamado:
+
+```txt
+index.html
+```
+
+Cole TODO este código:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Educalize</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- PIXEL UTMIFY -->
+  <script>
+    window.pixelId = "6a090d292a4c103c5d8facd1";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Montserrat',sans-serif;
+    }
+
+    body{
+      background:#f5f7fb;
+      color:#111;
+      overflow-x:hidden;
+    }
+
+    .container{
+      width:100%;
+      max-width:1200px;
+      margin:auto;
+      padding:20px;
+    }
+
+    .hero{
+      padding:70px 20px;
+      background:#fff;
+    }
+
+    .hero-content{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:50px;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      flex:1;
+      min-width:300px;
+    }
+
+    .logo{
+      font-size:44px;
+      font-weight:800;
+      color:#5b21b6;
+      margin-bottom:25px;
+    }
+
+    .hero h1{
+      font-size:56px;
+      line-height:1.1;
+      color:#2e1065;
+      margin-bottom:25px;
+      font-weight:800;
+    }
+
+    .highlight{
+      color:#ec4899;
+    }
+
+    .hero p{
+      font-size:22px;
+      line-height:1.5;
+      margin-bottom:30px;
+      color:#444;
+    }
+
+    .benefits{
+      margin-bottom:35px;
+    }
+
+    .benefits li{
+      list-style:none;
+      margin-bottom:16px;
+      font-size:19px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      color:#222;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#22c55e;
+      color:#fff;
+      text-decoration:none;
+      padding:18px 38px;
+      border-radius:14px;
+      font-size:20px;
+      font-weight:700;
+      transition:.3s;
+      box-shadow:0 10px 25px rgba(34,197,94,.3);
+      animation:pulse 2s infinite;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+    }
+
+    @keyframes pulse{
+      0%{transform:scale(1);}
+      50%{transform:scale(1.04);}
+      100%{transform:scale(1);}
+    }
+
+    .hero-image{
+      flex:1;
+      min-width:300px;
+      text-align:center;
+    }
+
+    .hero-image img{
+      width:100%;
+      max-width:520px;
+      border-radius:24px;
+      box-shadow:0 15px 40px rgba(0,0,0,.12);
+    }
+
+    .section{
+      padding:80px 20px;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:44px;
+      color:#2e1065;
+      margin-bottom:55px;
+      font-weight:800;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:22px;
+      padding:35px 28px;
+      text-align:center;
+      box-shadow:0 10px 30px rgba(0,0,0,.06);
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h3{
+      margin:20px 0 12px;
+      color:#2e1065;
+      font-size:24px;
+    }
+
+    .card p{
+      color:#555;
+      line-height:1.6;
+    }
+
+    .offer-section{
+      padding:90px 20px;
+    }
+
+    .offer-box{
+      background:#fff;
+      border-radius:30px;
+      padding:50px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:40px;
+      flex-wrap:wrap;
+      box-shadow:0 10px 40px rgba(0,0,0,.08);
+    }
+
+    .offer-image{
+      flex:1;
+      min-width:280px;
+      text-align:center;
+    }
+
+    .offer-image img{
+      width:100%;
+      max-width:420px;
+    }
+
+    .offer-content{
+      flex:1;
+      min-width:300px;
+    }
+
+    .old-price{
+      font-size:32px;
+      color:#999;
+      text-decoration:line-through;
+    }
+
+    .new-price{
+      font-size:78px;
+      color:#5b21b6;
+      font-weight:800;
+      margin:12px 0;
+    }
+
+    .offer-content p{
+      font-size:21px;
+      margin-bottom:24px;
+      color:#444;
+    }
+
+    .check-list{
+      margin-bottom:35px;
+    }
+
+    .check-list li{
+      list-style:none;
+      margin-bottom:14px;
+      font-size:18px;
+    }
+
+    .testimonials{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .testimonial{
+      background:#fff;
+      border-radius:22px;
+      padding:25px;
+      box-shadow:0 10px 30px rgba(0,0,0,.06);
+    }
+
+    .testimonial img{
+      width:100%;
+      border-radius:18px;
+      margin-bottom:16px;
+    }
+
+    .testimonial h4{
+      color:#2e1065;
+      margin-bottom:10px;
+      font-size:22px;
+    }
+
+    .testimonial p{
+      color:#555;
+      line-height:1.6;
+    }
+
+    .guarantee{
+      background:#5b21b6;
+      color:#fff;
+      text-align:center;
+      padding:70px 20px;
+      margin-top:80px;
+    }
+
+    .guarantee h2{
+      font-size:46px;
+      margin-bottom:18px;
+      font-weight:800;
+    }
+
+    .guarantee p{
+      font-size:22px;
+      opacity:.95;
+    }
+
+    footer{
+      background:#fff;
+      padding:30px;
+      text-align:center;
+      color:#777;
+      font-size:15px;
+    }
+
+    @media(max-width:768px){
+
+      .hero{
+        padding:50px 20px;
+      }
+
+      .hero h1{
+        font-size:40px;
+      }
+
+      .hero p{
+        font-size:19px;
+      }
+
+      .section-title{
+        font-size:34px;
+      }
+
+      .offer-box{
+        padding:30px;
+      }
+
+      .new-price{
+        font-size:60px;
+      }
+
+      .btn{
+        width:100%;
+        text-align:center;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<section class="hero">
+<div class="container hero-content">
+<div class="hero-text">
+
+<div class="logo">Educalize</div>
+
+<h1>
+Atividades prontas para desenvolver
+<span class="highlight">coordenação, movimento e socialização</span>
+infantil.
+</h1>
+
+<p>
+Mais de 300 atividades em PDFs e vídeos para Educação Física Infantil.
+</p>
+
+<ul class="benefits">
+<li>✅ PDFs prontos para aplicar</li>
+<li>✅ Vídeos explicativos</li>
+<li>✅ Atividades práticas e divertidas</li>
+<li>✅ Desenvolve coordenação motora</li>
+<li>✅ Estimula hábitos saudáveis</li>
+</ul>
+
+<a href="https://pay.wiapy.com/A1SqD3glTi" class="btn">
+QUERO ACESSAR AGORA
+</a>
+
+</div>
+
+<div class="hero-image">
+<img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1200&auto=format&fit=crop" alt="">
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Educalize — Todos os direitos reservados.
+</footer>
+
+<script
+src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+data-utmify-prevent-xcod-sck
+data-utmify-prevent-subids
+async
+defer
+></script>
+
+</body>
+</html>
+```
+
+---
+
+# 2. README.md
+
+Crie:
+
+```txt
+README.md
+```
+
+Cole:
+
+```md
+# Educalize
+
+Landing page pronta para Replit, GitHub e Netlify.
+```
+
+---
+
+# 3. .replit
+
+Crie:
+
+```txt
+.replit
+```
+
+Cole:
+
+```txt
+run = "python3 -m http.server 3000"
+```
+
+---
+
+# COMO SUBIR NO REPLIT
+
+## 1. Entre em:
+
+[https://replit.com](https://replit.com)
+
+---
+
+## 2. Clique:
+
+```txt
+Create Repl
+```
+
+---
+
+## 3. Escolha:
+
+```txt
+HTML, CSS, JS
+```
+
+---
+
+## 4. Apague os arquivos padrão
+
+---
+
+## 5. Cole os arquivos acima
+
+---
+
+## 6. Clique em:
+
+```txt
+Run
+```
+
+
+* jogar na Netlify
+* usar no Vercel
