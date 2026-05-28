@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -31,7 +32,7 @@
     }
 
     body{
-      background:#f7f7f7;
+      background:#f6f6f6;
       color:#222;
       overflow-x:hidden;
     }
@@ -43,8 +44,6 @@
       padding:0 20px;
     }
 
-    /* HERO */
-
     .hero{
       background:#fff;
       padding:40px 0 70px;
@@ -54,13 +53,15 @@
       display:flex;
       justify-content:space-between;
       align-items:center;
-      margin-bottom:50px;
+      margin-bottom:45px;
+      gap:20px;
+      flex-wrap:wrap;
     }
 
     .logo{
       font-size:52px;
       font-weight:800;
-      color:#4920a6;
+      color:#4c1db2;
     }
 
     .safe{
@@ -68,6 +69,7 @@
       font-weight:600;
       color:#555;
       text-align:right;
+      line-height:1.5;
     }
 
     .hero-content{
@@ -86,8 +88,8 @@
     .hero-text h1{
       font-size:60px;
       line-height:1.08;
-      color:#31126c;
-      margin-bottom:28px;
+      color:#32106f;
+      margin-bottom:25px;
       font-weight:800;
     }
 
@@ -100,7 +102,6 @@
       line-height:1.4;
       margin-bottom:30px;
       color:#333;
-      font-weight:500;
     }
 
     .hero-text p strong{
@@ -122,8 +123,8 @@
     }
 
     .icon{
-      width:40px;
-      height:40px;
+      width:42px;
+      height:42px;
       border-radius:50%;
       display:flex;
       align-items:center;
@@ -135,9 +136,9 @@
 
     .pink-bg{background:#ff4ca0;}
     .purple-bg{background:#7b3aed;}
-    .green-bg{background:#65c93c;}
+    .green-bg{background:#5fc53c;}
     .blue-bg{background:#2f80ed;}
-    .orange-bg{background:#f5a623;}
+    .orange-bg{background:#f6a623;}
 
     .btn{
       display:inline-block;
@@ -149,7 +150,7 @@
       font-size:28px;
       font-weight:800;
       transition:.3s;
-      box-shadow:0 10px 25px rgba(32,194,68,.35);
+      box-shadow:0 12px 30px rgba(32,194,68,.35);
     }
 
     .btn:hover{
@@ -163,8 +164,6 @@
       font-weight:600;
     }
 
-    /* HERO IMAGE */
-
     .hero-image{
       flex:1;
       min-width:320px;
@@ -172,10 +171,11 @@
 
     .compare-box{
       display:flex;
-      border-radius:30px;
+      border-radius:28px;
       overflow:hidden;
       position:relative;
-      box-shadow:0 15px 40px rgba(0,0,0,.12);
+      box-shadow:0 20px 45px rgba(0,0,0,.12);
+      min-height:650px;
     }
 
     .compare-side{
@@ -187,18 +187,18 @@
       width:100%;
       height:100%;
       object-fit:cover;
-      display:block;
     }
 
     .tag{
       position:absolute;
       top:20px;
       left:20px;
-      padding:12px 20px;
+      padding:12px 22px;
       border-radius:999px;
       color:#fff;
       font-weight:700;
       font-size:18px;
+      z-index:2;
     }
 
     .red{
@@ -206,7 +206,7 @@
     }
 
     .green{
-      background:#4cc83d;
+      background:#3ac53f;
     }
 
     .vs{
@@ -216,7 +216,7 @@
       transform:translate(-50%,-50%);
       width:90px;
       height:90px;
-      background:#6a34d7;
+      background:#6b35d7;
       border-radius:50%;
       display:flex;
       align-items:center;
@@ -228,16 +228,14 @@
       z-index:10;
     }
 
-    /* BENEFITS CARDS */
-
     .section{
-      padding:80px 0;
+      padding:85px 0;
     }
 
     .title{
       text-align:center;
       font-size:54px;
-      color:#31126c;
+      color:#32106f;
       margin-bottom:50px;
       font-weight:800;
     }
@@ -264,14 +262,14 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      font-size:38px;
       color:#fff;
+      font-size:36px;
       margin-bottom:24px;
     }
 
     .card h3{
       font-size:28px;
-      color:#31126c;
+      color:#32106f;
       margin-bottom:15px;
     }
 
@@ -281,8 +279,6 @@
       color:#555;
     }
 
-    /* OFFER */
-
     .offer{
       background:#fff;
       border-radius:35px;
@@ -290,20 +286,20 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:50px;
+      gap:60px;
       flex-wrap:wrap;
-      box-shadow:0 10px 30px rgba(0,0,0,.06);
+      box-shadow:0 10px 35px rgba(0,0,0,.06);
     }
 
     .offer-image{
       flex:1;
-      min-width:300px;
+      min-width:320px;
       text-align:center;
     }
 
     .offer-image img{
       width:100%;
-      max-width:450px;
+      max-width:520px;
     }
 
     .offer-content{
@@ -312,7 +308,7 @@
     }
 
     .old{
-      font-size:42px;
+      font-size:40px;
       text-decoration:line-through;
       color:#999;
     }
@@ -325,7 +321,7 @@
 
     .price{
       font-size:110px;
-      color:#31126c;
+      color:#32106f;
       font-weight:800;
       line-height:1;
       margin:10px 0;
@@ -348,8 +344,6 @@
       font-size:21px;
     }
 
-    /* TESTIMONIALS */
-
     .testimonials{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -365,7 +359,7 @@
 
     .testimonial img{
       width:100%;
-      height:240px;
+      height:250px;
       object-fit:cover;
     }
 
@@ -375,14 +369,14 @@
 
     .testimonial h4{
       font-size:24px;
-      color:#31126c;
+      color:#32106f;
       margin-bottom:8px;
     }
 
     .testimonial span{
       display:block;
-      margin-bottom:12px;
       color:#777;
+      margin-bottom:12px;
     }
 
     .stars{
@@ -397,14 +391,11 @@
       color:#444;
     }
 
-    /* GUARANTEE */
-
     .guarantee{
       margin-top:80px;
-      background:linear-gradient(90deg,#4a1fb3,#5f2ad5);
+      background:linear-gradient(90deg,#4a1fb3,#6529dd);
       color:#fff;
-      padding:45px;
-      border-radius:0;
+      padding:50px 20px;
     }
 
     .guarantee-content{
@@ -417,8 +408,8 @@
     }
 
     .badge{
-      width:130px;
-      height:130px;
+      width:140px;
+      height:140px;
       border-radius:50%;
       background:#ffcc00;
       color:#222;
@@ -426,7 +417,7 @@
       align-items:center;
       justify-content:center;
       font-weight:800;
-      font-size:22px;
+      font-size:24px;
       text-align:center;
       padding:10px;
     }
@@ -450,8 +441,6 @@
       font-size:15px;
     }
 
-    /* RESPONSIVO */
-
     @media(max-width:768px){
 
       .logo{
@@ -472,7 +461,7 @@
 
       .btn{
         width:100%;
-        text-align:center;
+    text-align:center;
         font-size:22px;
       }
 
@@ -488,12 +477,8 @@
         font-size:80px;
       }
 
-      .guarantee h2{
-        font-size:38px;
-      }
-
-      .guarantee p{
-        font-size:18px;
+      .compare-box{
+        min-height:450px;
       }
 
     }
@@ -504,92 +489,104 @@
 
 <body>
 
-  <section class="hero">
+<section class="hero">
 
-    <div class="container">
+  <div class="container">
 
-      <div class="top-bar">
-        <div class="logo">Educalize</div>
+    <div class="top-bar">
 
-        <div class="safe">
-          🔒 COMPRA 100% SEGURA<br>
-          Ambiente protegido
-        </div>
+      <div class="logo">
+        Educalize
       </div>
 
-      <div class="hero-content">
+      <div class="safe">
+        🔒 COMPRA 100% SEGURA<br>
+        Ambiente protegido
+      </div>
 
-        <div class="hero-text">
+    </div>
 
-          <h1>
-            Atividades prontas para desenvolver
-            <span class="pink">
-              coordenação, movimento e socialização
-            </span>
-            infantil.
-          </h1>
+    <div class="hero-content">
 
-          <p>
-            Mais de <strong>300 atividades</strong> em PDFs e vídeos para Educação Física Infantil.
-          </p>
+      <div class="hero-text">
 
-          <ul class="benefits">
+        <h1>
+          Atividades prontas para desenvolver
+          <span class="pink">
+            coordenação, movimento e socialização
+          </span>
+          infantil.
+        </h1>
 
-            <li>
-              <div class="icon pink-bg">📄</div>
-              PDFs prontos para aplicar
-            </li>
+        <p>
+          Mais de <strong>300 atividades</strong> em PDFs e vídeos para Educação Física Infantil.
+        </p>
 
-            <li>
-              <div class="icon purple-bg">▶</div>
-              Vídeos explicativos
-            </li>
+        <ul class="benefits">
 
-            <li>
-              <div class="icon green-bg">🏃</div>
-              Atividades práticas e divertidas
-            </li>
+          <li>
+            <div class="icon pink-bg">📄</div>
+            PDFs prontos para aplicar
+          </li>
 
-            <li>
-              <div class="icon blue-bg">👨‍👩‍👧</div>
-              Desenvolve coordenação e socialização
-            </li>
+          <li>
+            <div class="icon purple-bg">▶</div>
+            Vídeos explicativos
+          </li>
 
-            <li>
-              <div class="icon orange-bg">❤</div>
-              Estimula hábitos saudáveis
-            </li>
+          <li>
+            <div class="icon green-bg">🏃</div>
+            Atividades práticas e divertidas
+          </li>
 
-          </ul>
+          <li>
+            <div class="icon blue-bg">👨‍👩‍👧</div>
+            Desenvolve coordenação e socialização
+          </li>
 
-          <a href="https://pay.wiapy.com/A1SqD3glTi" class="btn">
-            QUERO ACESSAR AGORA →
-          </a>
+          <li>
+            <div class="icon orange-bg">❤</div>
+            Estimula hábitos saudáveis
+          </li>
 
-          <div class="secure">
-            🔒 Pagamento seguro e acesso imediato
-          </div>
+        </ul>
 
+        <a href="https://pay.wiapy.com/A1SqD3glTi" class="btn">
+          QUERO ACESSAR AGORA →
+        </a>
+
+        <div class="secure">
+          🔒 Pagamento seguro e acesso imediato
         </div>
 
-        <div class="hero-image">
+      </div>
 
-          <div class="compare-box">
+      <div class="hero-image">
 
-            <div class="compare-side">
-              <div class="tag red">MENOS TELAS</div>
+        <div class="compare-box">
 
-              <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop">
+          <div class="compare-side">
+
+            <div class="tag red">
+              MENOS TELAS
             </div>
 
-            <div class="compare-side">
-              <div class="tag green">MAIS MOVIMENTO</div>
+            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop">
 
-              <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1200&auto=format&fit=crop">
+          </div>
+
+          <div class="compare-side">
+
+            <div class="tag green">
+              MAIS MOVIMENTO
             </div>
 
-            <div class="vs">VS</div>
+            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1200&auto=format&fit=crop">
 
+          </div>
+
+          <div class="vs">
+            VS
           </div>
 
         </div>
@@ -598,217 +595,191 @@
 
     </div>
 
-  </section>
+  </div>
 
-  <!-- BENEFICIOS -->
+</section>
 
-  <section class="section">
+<section class="section">
 
-    <div class="container">
+  <div class="container">
 
-      <h2 class="title">
-        O que você recebe
-      </h2>
+    <h2 class="title">
+      O que você recebe
+    </h2>
 
-      <div class="cards">
+    <div class="cards">
 
-        <div class="card">
-          <div class="card-icon pink-bg">📄</div>
-          <h3>PDFs Prontos</h3>
-          <p>
-            Mais de 300 atividades para baixar e aplicar quando quiser.
-          </p>
+      <div class="card">
+        <div class="card-icon pink-bg">📄</div>
+        <h3>PDFs Prontos</h3>
+        <p>
+          Mais de 300 atividades organizadas para aplicar quando quiser.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon purple-bg">▶</div>
+        <h3>Vídeos Explicativos</h3>
+        <p>
+          Vídeos ensinando exatamente como aplicar as atividades.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon green-bg">📋</div>
+        <h3>Atividades Práticas</h3>
+        <p>
+          Exercícios divertidos para o desenvolvimento infantil.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon blue-bg">🏃</div>
+        <h3>Exercícios Infantis</h3>
+        <p>
+          Atividades para diferentes idades e níveis.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon orange-bg">📚</div>
+        <h3>Material Completo</h3>
+        <p>
+          Tudo organizado de forma prática e didática.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="offer">
+
+      <div class="offer-image">
+
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200&auto=format&fit=crop">
+
+      </div>
+
+      <div class="offer-content">
+
+        <div class="old">
+          De R$ 97,00
         </div>
 
-        <div class="card">
-          <div class="card-icon purple-bg">▶</div>
-          <h3>Vídeos Explicativos</h3>
-          <p>
-            Vídeos práticos mostrando como aplicar as atividades.
-          </p>
+        <div class="small">
+          Por apenas
         </div>
 
-        <div class="card">
-          <div class="card-icon green-bg">📋</div>
-          <h3>Atividades Práticas</h3>
-          <p>
-            Exercícios dinâmicos e divertidos para o desenvolvimento infantil.
-          </p>
+        <div class="price">
+          R$ 19,90
         </div>
 
-        <div class="card">
-          <div class="card-icon blue-bg">🏃</div>
-          <h3>Exercícios Infantis</h3>
-          <p>
-            Atividades para todas as idades e níveis de desenvolvimento.
-          </p>
+        <div class="pink-text">
+          Pagamento único e acesso vitalício!
         </div>
 
-        <div class="card">
-          <div class="card-icon orange-bg">📚</div>
-          <h3>Material Completo</h3>
-          <p>
-            Tudo organizado de forma fácil e didática para o seu dia a dia.
-          </p>
-        </div>
+        <ul class="check">
+          <li>✅ Acesso imediato após a compra</li>
+          <li>✅ Use quando quiser</li>
+          <li>✅ Material atualizado</li>
+          <li>✅ 100% online e seguro</li>
+        </ul>
+
+        <a href="https://pay.wiapy.com/A1SqD3glTi" class="btn">
+          QUERO ACESSAR AGORA →
+        </a>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
 
-  <!-- OFERTA -->
+</section>
 
-  <section class="section">
+<section class="section">
 
-    <div class="container">
+  <div class="container">
 
-      <div class="offer">
+    <h2 class="title">
+      O que dizem nossos clientes
+    </h2>
 
-        <div class="offer-image">
-          <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200&auto=format&fit=crop">
-        </div>
+    <div class="testimonials">
 
-        <div class="offer-content">
+      <div class="testimonial">
 
-          <div class="old">
-            De R$ 97,00
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop">
+
+        <div class="testimonial-content">
+
+          <h4>Juliana Mendes</h4>
+
+          <span>
+            Professora de Educação Física
+          </span>
+
+          <div class="stars">
+            ★★★★★
           </div>
-
-          <div class="small">
-            Por apenas
-          </div>
-
-          <div class="price">
-            R$ 19,90
-          </div>
-
-          <div class="pink-text">
-            Pagamento único e acesso vitalício!
-          </div>
-
-          <ul class="check">
-            <li>✅ Acesso imediato após a compra</li>
-            <li>✅ Use no seu tempo, onde quiser</li>
-            <li>✅ Material atualizado</li>
-            <li>✅ 100% online e seguro</li>
-          </ul>
-
-          <a href="https://pay.wiapy.com/A1SqD3glTi" class="btn">
-            QUERO ACESSAR AGORA →
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- DEPOIMENTOS -->
-
-  <section class="section">
-
-    <div class="container">
-
-      <h2 class="title">
-        O que dizem nossos clientes
-      </h2>
-
-      <div class="testimonials">
-
-        <div class="testimonial">
-
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop">
-
-          <div class="testimonial-content">
-
-            <h4>Juliana Mendes</h4>
-            <span>Professora de Educação Física</span>
-
-            <div class="stars">
-              ★★★★★
-            </div>
-
-            <p>
-              O material é incrível! Atividades práticas, fáceis de aplicar e as crianças adoram.
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="testimonial">
-
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop">
-
-          <div class="testimonial-content">
-
-            <h4>Carlos Santos</h4>
-            <span>Professor Escolar</span>
-
-            <div class="stars">
-              ★★★★★
-            </div>
-
-            <p>
-              Conteúdo completo e muito bem explicado. Os vídeos fazem toda a diferença.
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="testimonial">
-
-          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=800&auto=format&fit=crop">
-
-          <div class="testimonial-content">
-
-            <h4>Fernanda Lima</h4>
-            <span>Mãe</span>
-
-            <div class="stars">
-              ★★★★★
-            </div>
-
-            <p>
-              Meu filho está mais ativo e participativo. As atividades realmente funcionam.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- GARANTIA -->
-
-  <section class="guarantee">
-
-    <div class="container">
-
-      <div class="guarantee-content">
-
-        <div class="badge">
-          7 DIAS<br>GARANTIA
-        </div>
-
-        <div>
-
-          <h2>
-            Satisfação garantida!
-          </h2>
 
           <p>
-            Você tem 7 dias para acessar o material e, se por qualquer motivo não gostar,
-            devolvemos 100% do seu dinheiro.
+            O material é incrível! Atividades práticas, fáceis de aplicar e as crianças adoram.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="testimonial">
+
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop">
+
+        <div class="testimonial-content">
+
+          <h4>Carlos Santos</h4>
+
+          <span>
+            Professor Escolar
+          </span>
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <p>
+            Conteúdo muito bem explicado. Os vídeos fazem toda diferença.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="testimonial">
+
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=800&auto=format&fit=crop">
+
+        <div class="testimonial-content">
+
+          <h4>Fernanda Lima</h4>
+
+          <span>
+            Mãe
+          </span>
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <p>
+            Meu filho ficou mais ativo e participativo. As atividades realmente funcionam.
           </p>
 
         </div>
@@ -817,21 +788,53 @@
 
     </div>
 
-  </section>
+  </div>
 
-  <footer>
-    © 2026 Educalize — Todos os direitos reservados.
-  </footer>
+</section>
 
-  <!-- SCRIPT UTMIFY -->
+<section class="guarantee">
 
-  <script
-    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-    data-utmify-prevent-xcod-sck
-    data-utmify-prevent-subids
-    async
-    defer
-  ></script>
+  <div class="container">
+
+    <div class="guarantee-content">
+
+      <div class="badge">
+        7 DIAS<br>GARANTIA
+      </div>
+
+      <div>
+
+        <h2>
+          Satisfação garantida!
+        </h2>
+
+        <p>
+          Você possui 7 dias para acessar o material e, caso não goste,
+          devolvemos 100% do seu dinheiro.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Educalize — Todos os direitos reservados.
+</footer>
+
+<!-- SCRIPT UTMIFY -->
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
 
 </body>
 </html>
+```
